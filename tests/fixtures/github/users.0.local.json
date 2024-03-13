@@ -1,0 +1,38 @@
+[
+  {
+    "code": "MOCK_CODE_GITHUB_KODY",
+    "accessToken": "MOCK_CODE_GITHUB_KODY_mock_access_token",
+    "profile": {
+      "login": "Lee_Lubowitz",
+      "id": "409cbcc5-9ff3-4875-8c65-061eb175f9de",
+      "name": "Jim Feest",
+      "avatar_url": "https://github.com/ghost.png",
+      "emails": [
+        "Mohammad_DuBuque@yahoo.com",
+        "Jazmyne.Beer27@yahoo.com",
+        "Kiley.Walter@hotmail.com"
+      ]
+    },
+    "emails": [
+      {
+        "email": "Mohammad_DuBuque@yahoo.com",
+        "verified": false,
+        "primary": false,
+        "visibility": "public"
+      },
+      {
+        "email": "Jazmyne.Beer27@yahoo.com",
+        "verified": true,
+        "primary": false,
+        "visibility": null
+      },
+      {
+        "email": "Kiley.Walter@hotmail.com",
+        "verified": true,
+        "primary": true,
+        "visibility": null
+      }
+    ],
+    "primaryEmail": "Kiley.Walter@hotmail.com"
+  }
+]

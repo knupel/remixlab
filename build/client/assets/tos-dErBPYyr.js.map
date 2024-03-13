@@ -1,0 +1,1 @@
+{"version":3,"file":"tos-dErBPYyr.js","sources":["../../../app/routes/_marketing+/tos.tsx"],"sourcesContent":["export default function TermsOfServiceRoute() {\n\treturn <div>Terms of service</div>\n}\n"],"names":["TermsOfServiceRoute","jsx"],"mappings":"8CAAA,SAAwBA,GAAsB,CACtC,OAAAC,EAAAA,IAAA,OACR,SAAA"}

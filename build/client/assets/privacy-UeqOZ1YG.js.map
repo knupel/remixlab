@@ -1,0 +1,1 @@
+{"version":3,"file":"privacy-UeqOZ1YG.js","sources":["../../../app/routes/_marketing+/privacy.tsx"],"sourcesContent":["export default function PrivacyRoute() {\n\treturn <div>Privacy</div>\n}\n"],"names":["PrivacyRoute","jsx"],"mappings":"8CAAA,SAAwBA,GAAe,CAC/B,OAAAC,EAAAA,IAAA,OACR,SAAA"}
