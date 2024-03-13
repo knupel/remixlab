@@ -158,7 +158,7 @@ export const headers: HeadersFunction = ({ loaderHeaders }) => {
 }
 
 const ThemeFormSchema = z.object({
-	theme: z.enum(['system', 'light', 'dark']),
+	theme: z.enum(['light', 'dark']),
 })
 
 export async function action({ request }: ActionFunctionArgs) {
@@ -353,7 +353,7 @@ export function useTheme() {
 	const requestInfo = useRequestInfo()
 	const optimisticMode = useOptimisticThemeMode()
 	if (optimisticMode) {
-		return optimisticMode === 'system' ? hints.theme : optimisticMode
+		return optimisticMode === 'light' ? hints.theme : optimisticMode
 	}
 	return requestInfo.userPrefs.theme ?? hints.theme
 }
@@ -386,9 +386,9 @@ function ThemeSwitch({ userPreference }: { userPreference?: Theme | null }) {
 	})
 
 	const optimisticMode = useOptimisticThemeMode()
-	const mode = optimisticMode ?? userPreference ?? 'system'
+	const mode = optimisticMode ?? userPreference ?? 'light'
 	const nextMode =
-		mode === 'system' ? 'light' : mode === 'light' ? 'dark' : 'system'
+		mode === 'dark' ? 'light' : 'dark'
 	const modeLabel = {
 		light: (
 			<Icon name="sun">
@@ -398,11 +398,6 @@ function ThemeSwitch({ userPreference }: { userPreference?: Theme | null }) {
 		dark: (
 			<Icon name="moon">
 				<span className="sr-only">Dark</span>
-			</Icon>
-		),
-		system: (
-			<Icon name="laptop">
-				<span className="sr-only">System</span>
 			</Icon>
 		),
 	}
