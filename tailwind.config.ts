@@ -8,6 +8,9 @@ export default {
 	content: ['./app/**/*.{ts,tsx,jsx,js}'],
 	darkMode: 'class',
 	theme: {
+		fontFamily: {
+      sans: ['Madimi One', 'sans-serif'],
+    },
 		container: {
 			center: true,
 			padding: '2rem',
